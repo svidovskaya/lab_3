@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding: 0px;
+    box-sizing: border-box; /*св-ва width, height включает в себя знач. полей и границ, но не отступов (margin)*/
+  }
+
+header{
+    background: #dedede;
+    position: relative;
+    overflow: hidden;
+    padding: 15px;
+    margin: 10px 0;
+    margin-top: 0;
+  }
+header .logo{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    float: left;
+}  
+.logo img{
+    width: 100%;
+}
+header nav{
+    float: right;
+    background: rgb(35, 138, 197);
+    margin: 15px 0;
+}
+header nav li{
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid rgb(34, 32, 32);
+    margin: -3px;
+}
+header nav li a{
+    text-decoration: none; /* без подчёркивания*/
+    color: white;
+}
+header nav li:hover{
+    display: inline-block;
+    padding: 10;
+    background: rgb(199, 7, 7);
+}
+main{
+    padding-bottom: 20px;
+    margin: 15px 55px;
+}
+.content{
+    background: #cecece;
+    width: 1200px;
+    width: 100%;
+    padding: 15px;
+}
+.text{
+    line-height: 30px;
+    text-align:justify; /*растянуть*/
+}
+.first {
+    float: left;
+    max-width: 300px;
+    width: 100%;
+    padding: 5px 20px 10px 0;  
+}
+.second{
+    float: right;
+    max-width: 400px;
+    width: 100%;
+    padding: 15px 0 15px 15px;  
+}
+footer{
+    background: #aeaeae;
+    position: absolute;
+    width: 100%;
+    bottom:0;
+    padding: 15px;
+    
+    overflow: hidden;
+}
+.footer__section_logo .logo{
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    float: left;
+}
+
+.footer__row > *, .footer__section_menu nav{
+    float: left;
+}
+.footer__section_contacts {
+    float: right;
+    list-style-type: none;
+    padding: 0 15px;
+}
+.footer__section_menu {
+    margin: 0 15%;
+    list-style-type: none;
+    
+}
+.footer__section_menu nav{
+    margin: 0 15px;
+}
+.footer__row li a{
+    color:black;
+    text-decoration: none;
+}.footer__row li a:hover{
+    color:rgb(35, 138, 197);
+    text-decoration: none;
+}
+.copyright{
+    position: relative;
+    margin: 0 49%;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.wrap {
+  padding-bottom: 156px;
+}
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* iPad*/
+@media (max-width: 768px){
+    header .logo {
+        margin: 0 40%;
+    }
+    header nav{
+        float: left;
+        margin: 10px 45px;
+    }
+    .content {
+        /*margin: 20px 0; */
+    }
+    .footer__section_menu{
+        margin: 0 45px;
+    }
+    .footer__section_logo .logo{
+        display: none;
+    }
+    .footer__section_contacts {
+      margin: 0px -7px;
+    }
+}
+/* Ipad альбомная ориентация*/
+@media (orientation: landscape){
+    .footer__section_contacts {
+        margin: 0px -7px;
+    }
+    .footer__section_menu{
+        margin: 0 70px;
+    }    
+
+}
+/* Iphone 6/7/8Plus */
+@media (max-width: 414px){
+    header .logo{
+        max-width: 150px;
+        width: 100%;
+        margin: 0 30%;
+    }  
+    header nav {
+        margin: 7px 75px 0;
+    }
+    header nav li{
+        display: block;
+        width: 250px;
+        padding: 4px;
+    
+    }
+    header nav li{
+        text-align: center;
+    }
+    main{
+        margin: 10px 25px;
+    }
+    .content{
+        padding: 10px;
+    }
+    .text{
+        line-height: 23px;
+    }
+    .first {
+        max-width: 170px;
+        padding: 5px 10px 10px 0;  
+    }
+    .second{
+       max-width: 250px;
+   
+        
+    }
+    .footer__section_logo .logo{
+        display: none;
+    }
+    footer nav li{
+        font-size: 14px;
+        
+    }
+    .footer__section_menu{
+        margin: 0 8px;
+    }
+    .footer__section_contacts {
+        margin: 2px 95px;
+        text-align: center;
+      }
+    .copyright, .footer__section_contacts{
+        font-size: 11px;
+    }
+}
+@media (max-width: 736px) and (orientation: landscape){
+    header .logo{
+        max-width: 150px;
+        width: 100%;
+        margin: 0 40%;
+    }  
+    header nav li{
+        float: left;
+        padding: 4px;
+        margin: -2px;
+    }
+    header nav li{
+        font-size: 17px;
+    }
+    .text{
+        line-height: 23px;
+    }
+    .first {
+        max-width: 200px;
+        padding: 5px 10px 10px 0;  
+    }
+    .second{
+       max-width: 300px;
+       padding: 10px 0px 10px 10px;  
+    }
+    .footer__section_logo .logo{
+        display: block;
+        max-width: 100px;
+        float: left;
+    }
+    footer nav li{
+        font-size: 13px;
+        
+    }
+    .footer__section_menu{
+        margin: 0 35px;
+    }
+    .footer__section_contacts {
+        margin: 0 -15px;
+      }
+    .copyright, .footer__section_contacts{
+        font-size: 13px;
+    }
+
+}
+
+
+
+/*@media(max-width: 700px){
+    .first, .second{
+        transform: rotate(180deg)
+    }
+} */ 
